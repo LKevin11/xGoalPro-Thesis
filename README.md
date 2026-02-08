@@ -38,7 +38,6 @@ Users can view historical performance, analyze detailed statistics (goals, assis
 1.  **Clone the repository:**
     ```bash
     git clone [https://github.com/LKevin11/xGoalPro-Thesis.git](https://github.com/LKevin11/xGoalPro-Thesis.git)
-    cd xgoalpro
     ```
 
 2.  **Install dependencies:**
