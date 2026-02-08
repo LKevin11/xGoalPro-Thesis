@@ -1,0 +1,30 @@
+#MiniGameHubView {
+    background-color: #0d1b2a;  /* same dark background as login page */
+    color: #e0e1dd;
+}
+
+#titleLabel {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00b87b;
+    text-align: center;
+    margin: 10px 0 25px 0;
+}
+
+QPushButton#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+
+QPushButton#homeButton:hover {
+    background-color: #536d8b;
+}
+
+QLabel {
+    color: #e0e1dd;
+    font-size: 16px;
+}

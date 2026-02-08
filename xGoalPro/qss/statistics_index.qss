@@ -1,0 +1,50 @@
+#StatisticsIndexPage {
+    background-color: #0d1b2a;
+}
+
+#titleLabel {
+    font-size: 48px;
+    font-weight: 700;
+    color: #00b87b;
+    margin-top: 10px;
+}
+
+#subTitleLabel {
+    font-size: 28px;
+    color: #a9bcd0;
+    margin-bottom: 20px;
+}
+
+QLabel {
+    color: #e0e1dd;
+    font-size: 16px;
+}
+
+#statButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px 40px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    min-width: 280px;
+}
+
+#statButton:hover {
+    background-color: #00a06f;
+}
+
+#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+
+#homeButton:hover {
+    background-color: #536d8b;
+}

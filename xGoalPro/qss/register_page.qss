@@ -1,0 +1,95 @@
+#RegisterPage {
+    background-color: #0d1b2a;
+}
+
+#titleLabel {
+    font-size: 34px;
+    font-weight: 700;
+    color: #00b87b;
+    margin-top: 10px;
+}
+
+#subTitleLabel {
+    font-size: 20px;
+    color: #a9bcd0;
+    margin-bottom: 25px;
+}
+
+QLabel {
+    color: #e0e1dd;
+    font-size: 16px;
+}
+
+#inputField {
+    background-color: #1b263b;
+    border: 2px solid #415a77;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    min-width: 180px;
+    max-width: 500px;
+}
+
+#inputField:focus {
+    border-color: #00b87b;
+    background-color: #1e324e;
+}
+
+#registerButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 15px;
+}
+
+#registerButton:hover {
+    background-color: #00a06f;
+}
+
+#loginLabel {
+    color: #a9bcd0;
+    font-size: 15px;
+}
+
+#loginButton {
+    color: #00b87b;
+    font-weight: bold;
+    font-size: 15px;
+    background: transparent;
+    border: none;
+    text-decoration: underline;
+}
+
+#loginButton:hover {
+    color: #00ff9d;
+}
+
+#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+
+#homeButton:hover {
+    background-color: #536d8b;
+}
+
+/* --- Tooltip Styling --- */
+QToolTip {
+    background-color: #1b263b;
+    color: #e6f7ee;
+    border: 1px solid #00b87b;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+}

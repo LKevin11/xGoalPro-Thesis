@@ -1,0 +1,71 @@
+#TrainingEditView {
+    background-color: #0d1b2a;
+}
+
+QLabel#pageTitle {
+    color: #00b87b;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    margin-bottom: 5px;
+}
+
+QLabel#pageSubtitle {
+    color: #a9bcd0;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+QLabel {
+    color: #e0e1dd;
+    font-size: 16px;
+}
+
+QLineEdit, QSpinBox, QDoubleSpinBox {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    border: 1px solid #415a77;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 15px;
+    min-width: 120px;
+}
+
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus {
+    border: 1px solid #00b87b;
+}
+
+QPushButton#primaryButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 28px;
+}
+
+QPushButton#primaryButton:hover {
+    background-color: #00e69d;
+}
+
+QPushButton#secondaryButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+
+QPushButton#secondaryButton:hover {
+    background-color: #536d8b;
+}
+
+QLabel#sectionLabel {
+    font-size: 14pt;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+

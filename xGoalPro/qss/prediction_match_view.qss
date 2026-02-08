@@ -1,0 +1,214 @@
+/* --- Base Background --- */
+QWidget {
+    background-color: #0d1b2a;
+}
+
+/* --- Title --- */
+#leagueHubTitle {
+    color: #00b87b;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* --- Home Button --- */
+#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+#homeButton:hover {
+    background-color: #536d8b;
+}
+
+/* --- Model selection label --- */
+#checkboxLabel {
+    color: #9fbcd9;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 6px 12px;
+}
+
+/* --- Checkbox style --- */
+QCheckBox#modelCheckbox {
+    color: #ffffff;
+    font-size: 14px;
+    spacing: 6px;
+    padding: 4px 10px;
+}
+QCheckBox#modelCheckbox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #00b87b;
+    background-color: transparent;
+}
+QCheckBox#modelCheckbox::indicator:checked {
+    background-color: #00b87b;
+    border: 2px solid #00b87b;
+}
+QCheckBox#modelCheckbox:hover {
+    color: #00d48e;
+}
+
+/* --- Match Card --- */
+#leagueCard {
+    background-color: transparent;
+    border: 2px solid #24344f;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 4px;
+}
+#leagueCard:hover {
+    border-color: #00b87b;
+    background-color: rgba(0, 184, 123, 0.05);
+}
+#leagueCard QLabel {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: transparent;
+}
+#leagueCard QPushButton, #leagueCardButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 8px 20px;
+    border-radius: 12px;
+    border: none;
+}
+#leagueCard QPushButton:hover, #leagueCardButton:hover {
+    background-color: #00a06f;
+}
+
+/* --- Scroll Area --- */
+QScrollArea {
+    border: none;
+    background-color: #0d1b2a;
+}
+
+/* --- Scrollbar --- */
+QScrollBar:vertical {
+    background: #1b263b;
+    width: 14px;
+    margin: 2px;
+    border-radius: 7px;
+}
+QScrollBar::handle:vertical {
+    background: #00b87b;
+    border-radius: 7px;
+    min-height: 20px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #00d48e;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+    border: none;
+}
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: #1b263b;
+    border-radius: 7px;
+}
+
+/* --- Tabs --- */
+QTabWidget::pane {
+    border: none;
+    background: #0d1b2a;
+}
+QTabBar::tab {
+    background: #24344f;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 30px;
+    min-width: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 3px;
+}
+QTabBar::tab:selected {
+    background: #00b87b;
+    color: #0d1b2a;
+}
+QTabBar::tab:hover {
+    background: #00a06f;
+}
+
+/* --- RESULT PANEL --- */
+#resultContainer {
+    background-color: #10293e;           /* slightly deeper blue tone for contrast */
+    border: 1px solid #1e384f;
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 184, 123, 0.08);
+}
+
+/* Title */
+#resultTitle {
+    color: #a8ffcf;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Divider line */
+#resultLine {
+    background-color: #20425f;
+    height: 2px;
+    border: none;
+    border-radius: 1px;
+    margin: 10px 0 14px 0;
+}
+
+/* Result labels */
+#resultItem {
+    font-weight: 600;
+    color: #e6f7ee;
+    font-size: 15px;
+    margin-bottom: 6px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+/* Rich text key/value styling */
+#resultContainer QLabel .res-key {
+    color: #75f4ae;           /* brighter neon mint for emphasis */
+    font-weight: bold;
+}
+
+#resultContainer QLabel .res-val {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Hover highlight for interactivity */
+#resultItem:hover {
+    color: #a5f1cb;
+}
+
+/* --- Tooltip Styling --- */
+QToolTip {
+    background-color: #1b263b;
+    color: #e6f7ee;
+    border: 1px solid #00b87b;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+}
+

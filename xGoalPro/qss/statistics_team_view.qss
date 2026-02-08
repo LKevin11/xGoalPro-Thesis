@@ -1,0 +1,102 @@
+#StatisticsTeamView {
+    background-color: #0d1b2a;
+}
+
+/* --- Page Title --- */
+#pageTitle {
+    color: #00b87b;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* --- Info Label --- */
+#infoLabel {
+    color: #a9bcd0;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+/* --- Back Button --- */
+#backButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+#backButton:hover {
+    background-color: #536d8b;
+}
+
+/* --- Tabs --- */
+QTabWidget::pane {
+    border: 2px solid #1b263b;
+    background-color: #1b263b;
+}
+QTabBar::tab {
+    background: #1b263b;
+    color: #e0e1dd;
+    padding: 8px 28px;
+    min-width: 130px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: bold;
+}
+QTabBar::tab:selected {
+    background: #00b87b;
+    color: #0d1b2a;
+}
+QTabBar::tab:hover {
+    background: #00a06f;
+}
+
+/* --- Tables --- */
+QTableWidget {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    gridline-color: #415a77;
+    border: 1px solid #415a77;
+    selection-background-color: #00b87b;
+    selection-color: #0d1b2a;
+    font-size: 14px;
+}
+QHeaderView::section {
+    background-color: #24344f;
+    color: #00b87b;
+    font-weight: bold;
+    border: 1px solid #1b263b;
+}
+
+/* --- Scrollbars --- */
+QScrollBar:vertical, QScrollBar:horizontal {
+    background: #1b263b;
+    margin: 2px;
+}
+QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
+    background: #00b87b;
+}
+QScrollBar::handle:vertical:hover,
+QScrollBar::handle:horizontal:hover {
+    background: #00d48e;
+}
+QScrollBar::add-line, QScrollBar::sub-line {
+    background: none;
+    border: none;
+}
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: #1b263b;
+}
+
+/* --- Tooltip Styling --- */
+QToolTip {
+    background-color: #1b263b;
+    color: #e6f7ee;
+    border: 1px solid #00b87b;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+}

@@ -1,0 +1,160 @@
+﻿<Window x:Class="Snake.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snake.WPF"
+        mc:Ignorable="d"
+        Title="Snake" Height="500" Width="800"
+        MinWidth="300" MinHeight="300"
+        Background="{StaticResource BackGroundColor}"
+        Foreground="{StaticResource TextColor}"
+        WindowStartupLocation="CenterScreen">
+
+    <!-- Ablak billentyűzet parancskötések -->
+    <Window.InputBindings>
+        <KeyBinding Key="Up" Command="{Binding DirectionChange}" CommandParameter="up" />
+        <KeyBinding Key="Down" Command="{Binding DirectionChange}" CommandParameter="down" />
+        <KeyBinding Key="Left" Command="{Binding DirectionChange}" CommandParameter="left" />
+        <KeyBinding Key="Right" Command="{Binding DirectionChange}" CommandParameter="right" />
+        <KeyBinding Key="P" Command="{Binding PauseCommand}"/>
+    </Window.InputBindings>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Menü -->
+        <Menu x:Name="menuBar"
+              Grid.Row="0"
+              Background="#1b263b"
+              Foreground="#a9bcd0"
+              IsEnabled="{Binding IsMenuEnabled}">
+            <Menu.Resources>
+                <!-- Apply consistent colors to all MenuItems -->
+                <Style TargetType="MenuItem">
+                    <Setter Property="Background" Value="#1b263b"/>
+                    <Setter Property="Foreground" Value="#a9bcd0"/>
+                    <Setter Property="BorderBrush" Value="#1b263b"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Padding" Value="6,2"/>
+                    <Setter Property="Cursor" Value="Hand"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsHighlighted" Value="True">
+                            <Setter Property="Background" Value="#00b87b"/>
+                            <Setter Property="Foreground" Value="#0d1b2a"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Menu.Resources>
+
+            <MenuItem x:Name="newGameMenu" Header="Load New Game" Command="{Binding NewGameCommand}" />
+            <MenuItem x:Name="gameFieldSizeMenuItem" Header="Game Field Size">
+                <MenuItem x:Name="smallMapItem" Header="Small game field" IsCheckable="True" IsChecked="{Binding IsGameFieldSmall}"/>
+                <MenuItem x:Name="mediumMapItem" Header="Medium game field" IsCheckable="True" IsChecked="{Binding IsGameFieldMedium}"/>
+                <MenuItem x:Name="largeMapItem" Header="Large game field" IsCheckable="True" IsChecked="{Binding IsGameFieldLarge}"/>
+            </MenuItem>
+            <MenuItem x:Name="quit" Header="Quit" Command="{Binding QuitCommand}"/>
+        </Menu>
+
+        <!-- Start gomb -->
+        <Button x:Name="startButton"
+                Grid.Row="1"
+                Content="START"
+                Background="#00b87b"
+                Foreground="#0d1b2a"
+                FontWeight="Bold"
+                Command="{Binding StartGameCommand}"
+                IsEnabled="{Binding IsStartGameButtonEnabled}"/>
+
+        <!-- Game area with overlay -->
+        <Grid Grid.Row="2">
+            <!-- Snake game grid -->
+            <ItemsControl x:Name="GameItemsControl" ItemsSource="{Binding Fields}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid x:Name="GameGrid"
+                                     Rows="{Binding Size}"
+                                     Columns="{Binding Size}"
+                                     Width="400"
+                                     Height="400"
+                                     Background="#1b263b"
+                                     SnapsToDevicePixels="True"
+                                     RenderOptions.BitmapScalingMode="HighQuality"/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Rectangle Margin="1">
+                            <Rectangle.Style>
+                                <Style TargetType="Rectangle">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Value}" Value="0">
+                                            <Setter Property="Fill" Value="#1b263b"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Value}" Value="1">
+                                            <Setter Property="Fill" Value="#00b87b"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Value}" Value="2">
+                                            <Setter Property="Fill" Value="#ff4f4f"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Value}" Value="3">
+                                            <Setter Property="Fill" Value="#ffcf40"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Rectangle.Style>
+                        </Rectangle>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+
+                <ItemsControl.ItemContainerStyle>
+                    <Style>
+                        <Setter Property="Grid.Row" Value="{Binding X}"/>
+                        <Setter Property="Grid.Column" Value="{Binding Y}"/>
+                    </Style>
+                </ItemsControl.ItemContainerStyle>
+            </ItemsControl>
+
+            <!-- Welcome overlay -->
+            <Border Background="#7F000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="WelcomeOverlay">
+                <TextBlock Foreground="#e0e1dd"
+                           FontSize="20"
+                           TextAlignment="Center"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center">
+                    Welcome to the Snake Game!<LineBreak/>
+                    First, load a new game, then<LineBreak/>
+                    press START to begin.<LineBreak/>
+                    Use the arrow keys to move the snake.<LineBreak/>
+                    Press 'P' to pause.
+                </TextBlock>
+            </Border>
+        </Grid>
+
+        <!-- Status bar -->
+        <StatusBar x:Name="statusBar"
+                   Grid.Row="3"
+                   Background="#1b263b"
+                   Foreground="#a9bcd0">
+            <StatusBarItem x:Name="scoreBoardText" HorizontalAlignment="Left">
+                <TextBlock Text="Score: "/>
+            </StatusBarItem>
+
+            <StatusBarItem x:Name="scoreBoardValue" HorizontalAlignment="Left">
+                <TextBlock Text="{Binding Score}"/>
+            </StatusBarItem>
+
+            <StatusBarItem x:Name="pauseLabel" HorizontalAlignment="Right">
+                <TextBlock Text="Press 'P' to pause the game!"/>
+            </StatusBarItem>
+        </StatusBar>
+
+    </Grid>
+</Window>

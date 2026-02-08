@@ -1,0 +1,46 @@
+#MineSweeperPage {
+    background-color: #0d1b2a;
+}
+
+/* --- Titles --- */
+#titleLabel {
+    font-size: 58px;
+    font-weight: 800;
+    color: #00b87b;
+    margin-top: 10px;
+}
+
+#subTitleLabel {
+    font-size: 36px;
+    color: #a9bcd0;
+    margin-bottom: 25px;
+}
+
+/* --- Buttons --- */
+#loginButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 18px 40px;
+    border-radius: 14px;
+    border: none;
+    margin-top: 20px;
+}
+
+#loginButton:hover {
+    background-color: #00a06f;
+}
+
+#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+
+#homeButton:hover {
+    background-color: #536d8b;
+}

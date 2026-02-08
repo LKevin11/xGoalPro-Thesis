@@ -1,0 +1,35 @@
+#GameCard {
+    border-radius: 15px;
+    padding: 15px;
+    border: 2px solid #415a77;
+    background-color: #1b263b;  /* Same for all cards, contrasts with hub background */
+    min-height: 240px;
+}
+
+#GameCard:hover {
+    border-color: #00b87b;
+}
+
+#GameCard QLabel {
+    color: #e0e1dd;
+    font-size: 16px;          /* Larger text */
+    text-align: center;
+}
+
+#GameCard QLabel:first-child {
+    margin-bottom: 10px;
+}
+
+#viewGameButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 24px;
+    border-radius: 10px;
+    border: none;
+}
+
+#viewGameButton:hover {
+    background-color: #00a06f;
+}

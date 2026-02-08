@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Környezet és Build fájlok (Ezeket nem töltjük fel!)
+dist/
+build/
+*.spec
+venv/
+env/
+.env
+
+# Generált telepítők és exe fájlok (A képeid alapján)
+*.exe
+*.iss
+xGoalPro_WINDOWS_1_0_setup.exe
+Output/
+
+# IDE beállítások (ha használsz VS Code-ot vagy PyCharmot)
+.vscode/
+.idea/

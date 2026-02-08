@@ -1,0 +1,132 @@
+#StatisticsLeagueView {
+    background-color: #0d1b2a;
+}
+
+/* --- Page Title --- */
+#pageTitle {
+    color: #00b87b;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* --- Info Label (Tip above the table) --- */
+#infoLabel {
+    color: #a9bcd0;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+/* --- Home Button --- */
+#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+#homeButton:hover {
+    background-color: #536d8b;
+}
+
+/* --- Tabs --- */
+QTabWidget::pane {
+    border: 2px solid #1b263b;
+    background-color: #1b263b;
+}
+QTabBar::tab {
+    background: #1b263b;
+    color: #e0e1dd;
+    padding: 8px 28px; /* increased horizontal padding */
+    min-width: 130px;  /* prevents text clipping */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: bold;
+}
+QTabBar::tab:selected {
+    background: #00b87b;
+    color: #0d1b2a;
+}
+QTabBar::tab:hover {
+    background: #00a06f;
+}
+
+/* --- Tables --- */
+QTableWidget {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    gridline-color: #415a77;
+    border: 1px solid #415a77;
+    selection-background-color: #00b87b;
+    selection-color: #0d1b2a;
+    font-size: 14px;
+}
+QHeaderView::section {
+    background-color: #24344f;
+    color: #00b87b;
+    font-weight: bold;
+    border: 1px solid #1b263b;
+}
+
+/* --- Scrollbar --- */
+QScrollBar:vertical {
+    background: #1b263b;
+    width: 14px;
+    margin: 2px;
+    border-radius: 7px;
+}
+QScrollBar::handle:vertical {
+    background: #00b87b;
+    border-radius: 7px;
+    min-height: 20px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #00d48e;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+    border: none;
+}
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: #1b263b;
+    border-radius: 7px;
+}
+QScrollBar:horizontal {
+    background: #1b263b;
+    height: 14px;
+    margin: 2px;
+    border-radius: 7px;
+}
+QScrollBar::handle:horizontal {
+    background: #00b87b;
+    border-radius: 7px;
+    min-width: 20px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #00d48e;
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background: none;
+    border: none;
+}
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: #1b263b;
+    border-radius: 7px;
+}
+
+/* --- Tooltip Styling --- */
+QToolTip {
+    background-color: #1b263b;
+    color: #e6f7ee;
+    border: 1px solid #00b87b;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: "Segoe UI", "Noto Sans", sans-serif;
+}

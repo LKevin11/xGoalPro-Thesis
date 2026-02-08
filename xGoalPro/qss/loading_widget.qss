@@ -1,0 +1,11 @@
+#LoadingWidget {
+    background-color: #0d1b2a; /* same as your home window */
+}
+
+#loadingText {
+    color: #a9bcd0;
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    margin-top: 15px;
+}

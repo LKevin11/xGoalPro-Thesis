@@ -1,0 +1,116 @@
+#RiskPage {
+    background-color: #0d1b2a;
+    color: #e0e1dd;
+}
+
+/* --- Titles --- */
+#titleLabel {
+    font-size: 38px;
+    font-weight: 800;
+    color: #00b87b;
+    margin-bottom: 10px;
+}
+
+/* --- Scoreboard --- */
+#scoreLabel {
+    font-size: 18px;
+    color: #a9bcd0;
+}
+
+/* --- Buttons --- */
+#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+#homeButton:hover {
+    background-color: #536d8b;
+}
+
+#actionButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    padding: 12px 20px;
+}
+#actionButton:hover {
+    background-color: #00a06f;
+}
+
+/* --- Progress Bar --- */
+QProgressBar {
+    height: 25px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #1b263b;
+    color: #e0e1dd;
+}
+QProgressBar::chunk {
+    background-color: #00b87b;
+    border-radius: 8px;
+}
+
+/* --- Log Box --- */
+#logBox {
+    background-color: #1b263b;
+    border-radius: 10px;
+    color: #e0e1dd;
+    font-size: 14px;
+}
+
+/* --- Status Label --- */
+#statusLabel {
+    font-size: 16px;
+    font-style: italic;
+    color: #a9bcd0;
+}
+
+/* === Leaderboard Page === */
+#leaderboardTable {
+    background-color: #1b263b;
+    border: 2px solid #415a77;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    gridline-color: #415a77;
+    selection-background-color: #00b87b;
+    alternate-background-color: #1e324e;
+}
+
+QHeaderView::section {
+    background-color: #1e324e;
+    color: #00b87b;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#leaderboardTitle{
+    font-size: 58px;
+    font-weight: 800;
+    color: #00b87b;
+    margin-top: 10px;
+}
+
+#leaderboardHomeButton{
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 18px 40px;
+    border-radius: 14px;
+    border: none;
+    margin-top: 20px;
+}
+
+#leaderboardHomeButton:hover{
+    background-color: #00a06f;
+}

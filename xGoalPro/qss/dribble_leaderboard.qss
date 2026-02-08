@@ -1,0 +1,54 @@
+#LeaderboardPage {
+    background-color: #0d1b2a;
+}
+
+/* --- Titles --- */
+#titleLabel {
+    font-size: 36px;
+    font-weight: 700;
+    color: #00b87b;
+    margin-top: 10px;
+}
+
+#subTitleLabel {
+    font-size: 18px;
+    color: #a9bcd0;
+    margin-bottom: 25px;
+}
+
+/* --- Buttons --- */
+#loginButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 25px;
+}
+
+#loginButton:hover {
+    background-color: #00a06f;
+}
+
+/* --- Table --- */
+#leaderboardTable {
+    background-color: #1b263b;
+    border: 2px solid #415a77;
+    color: #ffffff;
+    font-size: 16px;
+    gridline-color: #415a77;
+    selection-background-color: #00b87b;
+    alternate-background-color: #1e324e;
+}
+
+QHeaderView::section {
+    background-color: #1e324e;
+    color: #00b87b;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+}

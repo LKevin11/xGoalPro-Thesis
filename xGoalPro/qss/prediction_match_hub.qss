@@ -1,0 +1,178 @@
+/* --- Page Background --- */
+#LeagueHubPage, QWidget {
+    background-color: #0d1b2a;
+}
+
+/* --- Title --- */
+#leagueHubTitle {
+    color: #00b87b;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* --- Home/Back Button --- */
+#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+#homeButton:hover {
+    background-color: #536d8b;
+}
+
+/* --- League/Team/Match Card --- */
+#leagueCard {
+    background-color: transparent;  /* no dark background inside cards */
+    border: 2px solid #24344f;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 4px;
+}
+#leagueCard:hover {
+    border-color: #00b87b;
+    background-color: rgba(0, 184, 123, 0.05); /* subtle glow effect */
+}
+#leagueCard QLabel {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+}
+#leagueCard QPushButton, #leagueCardButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 12px;
+    border: none;
+}
+#leagueCard QPushButton:hover, #leagueCardButton:hover {
+    background-color: #00a06f;
+}
+
+/* --- Scroll Area --- */
+QScrollArea {
+    border: none;
+    background-color: #0d1b2a;
+}
+
+/* --- Scrollbar --- */
+QScrollBar:vertical {
+    background: #1b263b;
+    width: 14px;
+    margin: 2px;
+    border-radius: 7px;
+}
+QScrollBar::handle:vertical {
+    background: #00b87b;
+    border-radius: 7px;
+    min-height: 20px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #00d48e;
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    background: none;
+    border: none;
+}
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: #1b263b;
+    border-radius: 7px;
+}
+QScrollBar:horizontal {
+    background: #1b263b;
+    height: 14px;
+    margin: 2px;
+    border-radius: 7px;
+}
+QScrollBar::handle:horizontal {
+    background: #00b87b;
+    border-radius: 7px;
+    min-width: 20px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: #00d48e;
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background: none;
+    border: none;
+}
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: #1b263b;
+    border-radius: 7px;
+}
+
+/* --- TABS --- */
+QTabWidget::pane {
+    border: none;
+    background: #0d1b2a;
+}
+QTabBar::tab {
+    background: #24344f;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 30px;
+    min-width: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-right: 3px;
+}
+QTabBar::tab:selected {
+    background: #00b87b;
+    color: #0d1b2a;
+}
+QTabBar::tab:hover {
+    background: #00a06f;
+}
+
+/* --- CALENDAR --- */
+QCalendarWidget QWidget {
+    background-color: #1b263b;
+    alternate-background-color: #0d1b2a;
+}
+
+/* Header buttons */
+QCalendarWidget QToolButton {
+    color: #ffffff;
+    background-color: #24344f;
+    border-radius: 6px;
+    margin: 3px;
+    padding: 4px 8px;
+    font-weight: bold;
+}
+QCalendarWidget QToolButton:hover {
+    background-color: #00b87b;
+    color: #0d1b2a;
+}
+
+/* Calendar cells (date area) */
+QCalendarWidget QAbstractItemView:enabled {
+    color: #ffffff;
+    background-color: #1b263b;
+    selection-background-color: #00b87b;
+    selection-color: #0d1b2a;
+    font-weight: bold;
+}
+
+/* Lighter tone for cells with matches */
+QCalendarWidget QAbstractItemView::item {
+    background-color: #1f3553;
+}
+QCalendarWidget QAbstractItemView::item:selected {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    border-radius: 6px;
+}
+QCalendarWidget QAbstractItemView::item:hover {
+    background-color: rgba(0, 184, 123, 0.2);
+}

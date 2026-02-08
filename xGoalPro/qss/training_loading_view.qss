@@ -1,0 +1,45 @@
+#TrainingLoadingView {
+    background-color: #0d1b2a;
+}
+
+#trainingLabel {
+    color: #00b87b;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    margin-bottom: 10px;
+}
+
+#logBox {
+    background-color: #1b263b;
+    color: #e0e1dd;
+    border: 1px solid #415a77;
+    border-radius: 10px;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 15px;
+    padding: 12px;
+    min-height: 300px;
+}
+
+#logBox:focus {
+    border: 1px solid #00b87b;
+}
+
+QPushButton#secondaryButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 24px;
+    min-width: 180px;
+}
+
+QPushButton#secondaryButton:hover {
+    background-color: #536d8b;
+}
+
+QPushButton#secondaryButton:disabled {
+    background-color: #2e3b52;
+    color: #8d99ae;
+}

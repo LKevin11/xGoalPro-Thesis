@@ -1,0 +1,58 @@
+#FUTPage {
+    background-color: #0d1b2a;
+}
+
+/* Titles */
+#titleLabel {
+    font-size: 42px;
+    font-weight: 800;
+    color: #00b87b;
+}
+
+#subTitleLabel {
+    font-size: 18px;
+    color: #a9bcd0;
+}
+
+/* Buttons */
+#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+
+#homeButton:hover {
+    background-color: #536d8b;
+}
+
+#primaryButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 14px 36px;
+    border-radius: 14px;
+    border: none;
+    margin-top: 10px;
+}
+
+#primaryButton:hover {
+    background-color: #00a06f;
+}
+
+#secondaryButton {
+    background-color: #1b263b;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid #00b87b;
+}
+
+#secondaryButton:hover {
+    background-color: #00b87b;
+    color: #0d1b2a;
+}

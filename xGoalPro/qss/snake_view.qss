@@ -1,0 +1,68 @@
+#SnakeIndexPage, #SnakeLeaderboardPage {
+    background-color: #0d1b2a;
+}
+
+/* --- Titles --- */
+#titleLabel {
+    font-size: 58px;
+    font-weight: 800;
+    color: #00b87b;
+    margin-top: 10px;
+}
+
+#subTitleLabel {
+    font-size: 36px;
+    color: #a9bcd0;
+    margin-bottom: 25px;
+}
+
+/* --- Buttons --- */
+#loginButton {
+    background-color: #00b87b;
+    color: #0d1b2a;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 18px 40px;
+    border-radius: 14px;
+    border: none;
+    margin-top: 20px;
+}
+
+#loginButton:hover {
+    background-color: #00a06f;
+}
+
+#homeButton {
+    background-color: #415a77;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 6px 18px;
+}
+
+#homeButton:hover {
+    background-color: #536d8b;
+}
+
+/* --- Leaderboard Table --- */
+#leaderboardTable {
+    background-color: #1b263b;
+    border: 2px solid #415a77;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    gridline-color: #415a77;
+    selection-background-color: #00b87b;
+    alternate-background-color: #1e324e;
+}
+
+QHeaderView::section {
+    background-color: #1e324e;
+    color: #00b87b;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+}
